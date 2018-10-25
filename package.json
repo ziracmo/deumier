@@ -1,5 +1,5 @@
 {
-  "name": "meteor-bootstrap4-react-router4-template",
+  "name": "deumier-app",
   "private": true,
   "scripts": {
     "start": "meteor run",
