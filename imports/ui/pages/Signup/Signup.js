@@ -55,20 +55,11 @@ class Signup extends React.Component {
       <section className="signup-page">
         <div className="card mx-auto" style={{ maxWidth: '28rem' }}>
           <div className="card-header">
-            <div className="brand">
-              <div className="text-center">
-                <img
-                  className="rounded-circle"
-                  src="https://via.placeholder.com/150x150"
-                  alt="logo"
-                />
-              </div>
-            </div>
             <div className="card-body">
-              <h4 className="card-title">Sign up</h4>
+              <h4 className="card-title">Inscription</h4>
               <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
-                  <label htmlFor="email">E-Mail Address</label>
+                  <label htmlFor="email">Adresse Mail</label>
 
                   <input
                     id="email"
@@ -82,7 +73,7 @@ class Signup extends React.Component {
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="password">Password</label>
+                  <label htmlFor="password">Mot de Passe</label>
                   <input
                     id="password"
                     type="password"
@@ -96,7 +87,7 @@ class Signup extends React.Component {
                 <div className="form-group">
                   <label>
                     <input type="checkbox" name="aggree" value="1" required /> I
-                    agree to the Terms and Conditions
+                    Accepter les conditions d'utilisations
                   </label>
                 </div>
                 <div className="form-group no-margin">
@@ -104,12 +95,12 @@ class Signup extends React.Component {
                     type="submit"
                     className="btn btn-primary btn-block mb-2"
                   >
-                    Sign up
+                    S'inscrire
                   </button>
                   {errMsg && <Alert errMsg={errMsg} />}
                 </div>
                 <div className="margin-top20">
-                  Already have an account? <NavLink to="/login">Login</NavLink>
+                  J'ai déjà un compte ? <NavLink to="/login">Se connecter</NavLink>
                 </div>
               </form>
             </div>

@@ -55,8 +55,8 @@ class Profile extends React.Component {
     }
     return (
       <div className="profile-page">
-        <h1>Profile Page</h1>
-        <Button target="userId" type="primary" title="Click for User Info" />
+        <h1>Page de profile</h1>
+        <Button target="userId" type="primary" title="Cliquer pour avoir les informations d'utilisateur" />
         {countersReady && (
           <Modal
             target="userId"
