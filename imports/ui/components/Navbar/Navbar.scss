@@ -1,8 +1,10 @@
 @import "../../theme/variables";
 
 .navbar {
-  background-color: $dark;
+  background-color: rgba($dark, 0.9);
   height: $navbar-height;
+  position: fixed;
+  width: 100vw;
   * {
     :hover,
     :active {

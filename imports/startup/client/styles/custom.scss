@@ -20,3 +20,26 @@ input {
   -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
 }
+
+div.dropdown-menu {
+  border-radius: 0;
+  background-color: $dark;
+  border: solid 1px $secondary;
+
+  button {
+    color: white;
+    transition-duration: 0.2s;
+    &:hover {
+      color: $primary;
+      cursor: pointer;
+      background-color: transparent;
+    }
+    i {
+      margin-right: 1rem;
+    }
+  }
+}
+
+span.dropdown-toggle {
+  color: white;
+}

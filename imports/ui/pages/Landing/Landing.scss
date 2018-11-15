@@ -5,7 +5,7 @@
   background: url("images/popsignuptwoweeks.jpg")  repeat 0 0;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 70px);
+  min-height: 100vh;
   font-size: 44px;
   h1 {
     color: white;

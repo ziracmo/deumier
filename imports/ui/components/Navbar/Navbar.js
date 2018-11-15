@@ -43,15 +43,15 @@ const LoggedInNav = () => [
         aria-expanded="false"
     />
         <div
-            className="dropdown-menu dropdown-menu-right"
+            className="dropdown-menu dropdown-menu-right z-depth-1"
             aria-labelledby="navbarDropdownMenuLink"
         >
             <NavLink to="/profile">
-                <button className="dropdown-item">Profile</button>
+                <button className="dropdown-item"><i className="fa fa-user"/>Profile</button>
             </NavLink>
             <div className="dropdown-divider"/>
             <NavLink to="/login" onClick={() => Meteor.logout()}>
-                <button className="dropdown-item">Se déconnecter</button>
+                <button className="dropdown-item"><i className="fa fa-sign-out"/>Se déconnecter</button>
             </NavLink>
         </div>
     </li>,
@@ -60,7 +60,7 @@ const LoggedInNav = () => [
 const Navbar = ({loggedIn}) => (
     <nav className="navbar navbar-expand-md justify-content-between py-0 z-depth-1">
         <span className="navbar-brand my-2">
-      <NavLink to="/"><img src="/images/logo_full.png" alt="" className={'logo'}/></NavLink>
+      <NavLink to="/"><img src="/images/logo_full.png" alt="netflix logo" className={'logo'}/></NavLink>
     </span>
         <button
             className="navbar-toggler my-2"
