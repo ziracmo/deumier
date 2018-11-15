@@ -1,8 +1,12 @@
 @import "../../../ui/theme/variables.scss";
 
+html {
+  background-color: #1d1d1d !important;
+}
+
 body {
   min-height: 100vh;
-  background-color: #333333 !important;
+  background-color: #1d1d1d !important;
 }
 
 input {
