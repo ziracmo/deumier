@@ -1,5 +1,8 @@
+@import "../../theme/variables";
+
 .navbar {
-  background-color: #444;
+  background-color: $dark;
+  height: $navbar-height;
   * {
     :hover,
     :active {
@@ -7,16 +10,20 @@
     }
   }
   a {
-    color: #666;
+    color: white;
   }
   .active {
-    color: #007bff;
+    color: $primary;
   }
   .navbar-brand a {
-    color: #666;
+    color: $primary;
   }
   .dropdown-item:active {
-    color: #212529;
-    background-color: #fff;
+    color: white;
+    background-color: $secondary;
+  }
+
+  .logo {
+    max-height: 40px;
   }
 }

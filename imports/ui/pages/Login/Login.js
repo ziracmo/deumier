@@ -52,7 +52,7 @@ class Login extends React.Component {
     const { errMsg } = this.state;
     return (
       <section className="login-page">
-        <div className="card mx-auto" style={{ maxWidth: '28rem' }}>
+        <div className="card login-container" style={{ maxWidth: '28rem' }}>
           <div className="card-header">
             <div className="card-body">
               <h4 className="card-title">Connexion</h4>
@@ -100,9 +100,6 @@ class Login extends React.Component {
                 </div>
               </form>
             </div>
-          </div>
-          <div className="footer text-center">
-            &copy; {new Date().getFullYear()}
           </div>
         </div>
       </section>

@@ -1,5 +1,18 @@
+@import "../../theme/variables";
+
 .signup-page {
-  margin-top: 15px;
+  display: flex;
+  min-height: calc(100vh - 70px);
+  align-items: center;
+  justify-content: center;
+  background: url("images/popsignuptwoweeks.jpg")  repeat 0 0;
+
+  .signup-container {
+    height: auto;
+    background-color: rgba($dark, 0.9);
+    color: white;
+  }
+
   .form-signin {
     width: 100%;
     max-width: 330px;

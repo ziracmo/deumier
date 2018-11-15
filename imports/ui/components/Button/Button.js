@@ -8,7 +8,7 @@ import './Button.scss';
 const handlePress = () => countersIncrease.call({ _id: Meteor.userId() });
 
 const Button = () => (
-  <button className="btn btn-secondary" onClick={handlePress}>
+  <button className="btn" onClick={handlePress}>
     Click Me
   </button>
 );

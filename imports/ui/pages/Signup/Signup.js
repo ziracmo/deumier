@@ -53,7 +53,7 @@ class Signup extends React.Component {
     const { errMsg } = this.state;
     return (
       <section className="signup-page">
-        <div className="card mx-auto" style={{ maxWidth: '28rem' }}>
+        <div className="card signup-container" style={{ maxWidth: '28rem' }}>
           <div className="card-header">
             <div className="card-body">
               <h4 className="card-title">Inscription</h4>
@@ -104,9 +104,6 @@ class Signup extends React.Component {
                 </div>
               </form>
             </div>
-          </div>
-          <div className="footer text-center">
-            &copy; {new Date().getFullYear()}
           </div>
         </div>
       </section>

@@ -57,29 +57,10 @@ const LoggedInNav = () => [
     </li>,
 ];
 
-const Status = ({loggedIn}) => (
-    <div className="my-2 mr-3">
-        {loggedIn ? (
-            <span className="text-success">
-        <i className="fa fa-circle"/>
-      </span>
-        ) : (
-            <span className="text-secondary">
-        <i className="fa fa-circle"/>
-      </span>
-        )}
-    </div>
-);
-
-Status.propTypes = {
-    loggedIn: PropTypes.bool.isRequired,
-};
-
 const Navbar = ({loggedIn}) => (
-    <nav className="navbar navbar-expand-md justify-content-between py-0">
-        <Status loggedIn={loggedIn}/>
+    <nav className="navbar navbar-expand-md justify-content-between py-0 z-depth-1">
         <span className="navbar-brand my-2">
-      <NavLink to="/">Deumier</NavLink>
+      <NavLink to="/"><img src="/images/logo_full.png" alt="" className={'logo'}/></NavLink>
     </span>
         <button
             className="navbar-toggler my-2"
