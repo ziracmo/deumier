@@ -63,6 +63,7 @@ class Login extends React.Component {
                     id="email"
                     type="email"
                     className="form-control"
+                    placeholder="exemple@netflix.com"
                     name="email"
                     value={this.state.email}
                     onChange={e => this.setState({ email: e.target.value })}
@@ -78,6 +79,7 @@ class Login extends React.Component {
                     id="password"
                     type="password"
                     className="form-control"
+                    placeholder="Password"
                     name="password"
                     value={this.state.password}
                     onChange={e => this.setState({ password: e.target.value })}

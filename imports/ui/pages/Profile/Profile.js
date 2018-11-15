@@ -66,8 +66,6 @@ class Profile extends React.Component {
           />
         )}
         <hr />
-        {countersReady && <Text count={counter.count} />}
-        <AddCountButton />
       </div>
     );
   }
