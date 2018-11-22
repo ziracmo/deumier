@@ -2,6 +2,7 @@ import {Accounts} from 'meteor/accounts-base';
 import React from 'react';
 import PropTypes from 'prop-types';
 import {NavLink} from 'react-router-dom';
+import DatePicker from "react-datepicker";
 
 // import components
 import Alert from '../../components/Alert';
@@ -154,6 +155,9 @@ class Signup extends React.Component {
                                             <option value="2">Autre</option>
                                         </select>
                                     </div>
+                                </div>
+                                <div className="form-group">
+                                    <DayPickerInput onDayChange={day => console.log(day)} />
                                 </div>
                                 <div className="form-group">
                                     <label>

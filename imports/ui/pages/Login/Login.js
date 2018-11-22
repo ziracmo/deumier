@@ -22,13 +22,13 @@ class Login extends React.Component {
 
   componentWillMount() {
     if (this.props.loggedIn) {
-      return this.props.history.push('/profile');
+      return this.props.history.push('/accueil');
     }
   }
 
   shouldComponentUpdate(nextProps) {
     if (nextProps.loggedIn) {
-      nextProps.history.push('/profile');
+      nextProps.history.push('/accueil');
       return false;
     }
     return true;
@@ -90,8 +90,7 @@ class Login extends React.Component {
                 <div className="form-group no-margin">
                   <button
                     type="submit"
-                    className="btn btn-primary btn-block mb-2"
-                  >
+                    className="btn btn-primary btn-block mb-2">
                     Se connecter
                   </button>
                   {errMsg && <Alert errMsg={errMsg} />}

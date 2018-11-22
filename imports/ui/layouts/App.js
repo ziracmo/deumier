@@ -13,6 +13,7 @@ import Navbar from '../components/Navbar';
 // import routes
 import Landing from '../pages/Landing';
 import Login from '../pages/Login';
+import Home from '../pages/Home';
 import Signup from '../pages/Signup';
 import Profile from '../pages/Profile';
 import NotFound from '../pages/Not-Found';
@@ -34,6 +35,7 @@ const App = props => (
         <PropsRoute exact path="/" component={Landing} {...props} />
         <PropsRoute path="/login" component={Login} {...props} />
         <PropsRoute path="/signup" component={Signup} {...props} />
+        <PropsRoute path="/accueil" component={Home} {...props} />
         <PropsRoute exact path="/profile" component={Profile} {...props} />
         <PropsRoute exact path="/profile/:_id" component={Profile} {...props} />
         <PropsRoute
