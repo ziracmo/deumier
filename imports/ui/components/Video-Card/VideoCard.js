@@ -1,10 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import './VideoCard.scss';
 
 const VideoCard = () => (
-  <div className="text-success">Button pressed {count} times.</div>
+  <div className="card video-card shadow">
+    <div className="card-body">
+        <iframe src="https://www.youtube.com/embed/HOUjkcKMF-U" frameBorder="0" allowFullScreen />
+    </div>
+  </div>
 );
 
 export default VideoCard;

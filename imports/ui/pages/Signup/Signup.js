@@ -2,7 +2,6 @@ import {Accounts} from 'meteor/accounts-base';
 import React from 'react';
 import PropTypes from 'prop-types';
 import {NavLink} from 'react-router-dom';
-import DatePicker from "react-datepicker";
 
 // import components
 import Alert from '../../components/Alert';
